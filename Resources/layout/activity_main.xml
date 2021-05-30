@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <GridLayout  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">    
+
+        <TextView
+        android:text="종목명"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_Stock_Name" />
+
+    <EditText
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditText_Stock_Name"      
+        android:inputType="text"
+        android:imeOptions="actionDone"/>
+
+        <TextView
+        android:text="종목수"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_Stock_Cnt" />
+        <EditText
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditText_Stock_Cnt"      
+        android:inputType="text"
+        android:imeOptions="actionDone"/>
+
+        </GridLayout>
+    <GridLayout  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">    
+
+       <Button
+        android:text="최근배당 조회"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/button_lastest_dividends"/>
+        <Button
+        android:text="다음배당 조회"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/button_next_dividends"/>
+
+        <Button
+        android:text="종목 추가"
+        android:layout_width="px"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/button_add"/>
+
+         <Button
+        android:text="종목 수정"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/button_modify"/>
+
+         <Button
+        android:text="종목 삭제"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/button_delete"/>
+
+
+    </GridLayout>
+     <TextView
+        android:text="주식가격"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_stock" />
+       
+    <TextView
+        android:text="배당금"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_amount" />
+
+    <TextView
+        android:text="배당락일"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_exdate" />
+    <TextView
+        android:text="배당지급일"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_paymentdate" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView_Stock" />
+
+    
+   
+</LinearLayout>
